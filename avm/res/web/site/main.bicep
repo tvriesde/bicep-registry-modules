@@ -533,6 +533,12 @@ output defaultHostname string = app.properties.defaultHostName
 @description('Unique identifier that verifies the custom domains assigned to the app. Customer will add this ID to a txt record for verification.')
 output customDomainVerificationId string = app.properties.customDomainVerificationId
 
+@description('Outbound ip address')
+output outboundIpAddresses array = split(app.properties.outboundIpAddresses, ',')
+
+@description('Possible outbound ip addresses')
+output possibleOutboundIpAddresses = split(app.properties.possibleOutboundIpAddresses, ',')
+
 // =============== //
 //   Definitions   //
 // =============== //
