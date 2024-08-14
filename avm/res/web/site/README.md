@@ -3087,6 +3087,8 @@ Virtual Network Route All enabled. This causes all outbound traffic to have Virt
 | `slots` | array | The list of the slots. |
 | `slotSystemAssignedMIPrincipalIds` | array | The principal ID of the system assigned identity of slots. |
 | `systemAssignedMIPrincipalId` | string | The principal ID of the system assigned identity. |
+| `outboundIpAddresses` | array | Ip addresses used for outbound network connectivity. Can be used for ip-whitelisting. |
+| `possibleOutboundIpAddresses` | array | Possible ip addresses used for outbound network connectivity. Can be used for ip-whitelisting. |
 
 ## Cross-referenced modules
 
