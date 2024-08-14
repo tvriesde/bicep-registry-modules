@@ -537,7 +537,7 @@ output customDomainVerificationId string = app.properties.customDomainVerificati
 output outboundIpAddresses array = split(app.properties.outboundIpAddresses, ',')
 
 @description('Possible outbound ip addresses')
-output possibleOutboundIpAddresses = split(app.properties.possibleOutboundIpAddresses, ',')
+output possibleOutboundIpAddresses array = split(app.properties.possibleOutboundIpAddresses, ',')
 
 // =============== //
 //   Definitions   //
