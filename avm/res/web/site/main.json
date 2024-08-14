@@ -6,7 +6,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.29.47.4906",
-      "templateHash": "15924562884872907151"
+      "templateHash": "43658077566288090"
     },
     "name": "Web/Function Apps",
     "description": "This module deploys a Web or Function App.",
@@ -4714,14 +4714,14 @@
       "metadata": {
         "description": "Ip addresses used for outbound network connectivity. Can be used for ip-whitelisting."
       },
-      "value": "[reference('app').outboundIpAddresses]"
+      "value": "[split(reference('app').outboundIpAddresses, ',')]"
     },
     "possibleOutboundIpAddresses": {
       "type": "array",
       "metadata": {
         "description": "Possible ip addresses used for outbound network connectivity. Can be used for ip-whitelisting."
       },
-      "value": "[reference('app').possibleOutboundIpAddresses]"
+      "value": "[split(reference('app').possibleOutboundIpAddresses, ',')]"
     }
   }
 }
